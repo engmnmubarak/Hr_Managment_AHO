@@ -270,41 +270,61 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(714, 453);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
-            this.button1.Text = "اضافة";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "إضــافــة";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Location = new System.Drawing.Point(12, 453);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "الغاء";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Text = "إلـغـاء";
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Gray;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(633, 453);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
-            this.button3.Text = "تعديل";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Text = "تعـديـل";
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(552, 453);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 5;
-            this.button4.Text = "حدف";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Text = "حـــذف";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // groupBox3
             // 

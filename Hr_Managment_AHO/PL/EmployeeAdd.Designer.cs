@@ -273,12 +273,17 @@
             // btnSelectPicture
             // 
             this.btnSelectPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSelectPicture.Location = new System.Drawing.Point(25, 198);
+            this.btnSelectPicture.BackColor = System.Drawing.Color.Gray;
+            this.btnSelectPicture.FlatAppearance.BorderSize = 0;
+            this.btnSelectPicture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectPicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectPicture.ForeColor = System.Drawing.Color.White;
+            this.btnSelectPicture.Location = new System.Drawing.Point(34, 196);
             this.btnSelectPicture.Name = "btnSelectPicture";
-            this.btnSelectPicture.Size = new System.Drawing.Size(197, 23);
+            this.btnSelectPicture.Size = new System.Drawing.Size(178, 25);
             this.btnSelectPicture.TabIndex = 10;
-            this.btnSelectPicture.Text = "الصورة الشخصية";
-            this.btnSelectPicture.UseVisualStyleBackColor = true;
+            this.btnSelectPicture.Text = "الصـورة الشـخـصـيـة";
+            this.btnSelectPicture.UseVisualStyleBackColor = false;
             this.btnSelectPicture.Click += new System.EventHandler(this.btnSelectPicture_Click);
             // 
             // txtAddress
@@ -583,23 +588,33 @@
             // btnAddEmp
             // 
             this.btnAddEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddEmp.Location = new System.Drawing.Point(473, 626);
+            this.btnAddEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.btnAddEmp.FlatAppearance.BorderSize = 0;
+            this.btnAddEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEmp.ForeColor = System.Drawing.Color.White;
+            this.btnAddEmp.Location = new System.Drawing.Point(458, 625);
             this.btnAddEmp.Name = "btnAddEmp";
-            this.btnAddEmp.Size = new System.Drawing.Size(106, 23);
+            this.btnAddEmp.Size = new System.Drawing.Size(102, 26);
             this.btnAddEmp.TabIndex = 0;
-            this.btnAddEmp.Text = "ادخال ";
-            this.btnAddEmp.UseVisualStyleBackColor = true;
+            this.btnAddEmp.Text = "إدخــال ";
+            this.btnAddEmp.UseVisualStyleBackColor = false;
             this.btnAddEmp.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.Location = new System.Drawing.Point(604, 626);
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(577, 625);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(102, 26);
             this.btnCancel.TabIndex = 1;
-            this.btnCancel.Text = "الغاء ";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Text = "إلـغـاء ";
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // groupBox3

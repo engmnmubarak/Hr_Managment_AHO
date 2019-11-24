@@ -118,22 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAddImg.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAddImg.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
   <data name="btnAddImg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnAddImg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 331</value>
+    <value>434, 331</value>
   </data>
   <data name="btnAddImg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 25</value>
+    <value>297, 25</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnAddImg.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="btnAddImg.Text" xml:space="preserve">
-    <value>ارفاق صورة المرفق</value>
+    <value>إرفــاق صـورة المـرفــق</value>
   </data>
   <data name="&gt;&gt;btnAddImg.Name" xml:space="preserve">
     <value>btnAddImg</value>
@@ -594,6 +600,12 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btnCancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
   <data name="btnCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -607,7 +619,7 @@
     <value>2</value>
   </data>
   <data name="btnCancel.Text" xml:space="preserve">
-    <value>اغلاق</value>
+    <value>إغـــلاق</value>
   </data>
   <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
     <value>btnCancel</value>
@@ -620,6 +632,12 @@
   </data>
   <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="btnAdd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAdd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="btnAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -634,7 +652,7 @@
     <value>3</value>
   </data>
   <data name="btnAdd.Text" xml:space="preserve">
-    <value>إضـافـة</value>
+    <value>إضـــافـــة</value>
   </data>
   <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
     <value>btnAdd</value>
