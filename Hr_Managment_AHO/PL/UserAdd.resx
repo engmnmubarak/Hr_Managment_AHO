@@ -153,6 +153,9 @@
   <data name="textBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
+  <data name="txtRePassword.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
   <data name="btnAdd.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -174,8 +177,8 @@
   <data name="btnAdd.Text" xml:space="preserve">
     <value>اضافة</value>
   </data>
-  <data name="txtPassword.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+  <data name="txtRePassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 240</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -186,9 +189,6 @@
   <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>تاكيد كلمة المرور :</value>
-  </data>
   <data name="btnCancel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
@@ -197,6 +197,9 @@
   </data>
   <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -276,6 +279,9 @@
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="txtPassword.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -294,14 +300,11 @@
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;txtRePassword.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 13</value>
   </data>
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="combxUserType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 153</value>
+  <data name="&gt;&gt;txtRePassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="combxUserType.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -327,17 +330,11 @@
   <data name="&gt;&gt;txtUserName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>تاكيد كلمة المرور :</value>
   </data>
-  <data name="&gt;&gt;combxUserType.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBoxInfo.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtRePassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 240</value>
+  <data name="txtRePassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -372,8 +369,8 @@
   <data name="txtPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
-  <data name="txtRePassword.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="label1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
@@ -387,8 +384,8 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtRePassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="label2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
@@ -420,9 +417,6 @@
   <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;txtRePassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>كلمة المرور :</value>
   </data>
@@ -438,8 +432,8 @@
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 157</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 13</value>
+  <data name="&gt;&gt;combxUserType.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 13</value>
@@ -459,6 +453,9 @@
   <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
     <value>txtPassword</value>
   </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
@@ -477,14 +474,17 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>449, 348</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="textBoxInfo.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtRePassword.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="txtUserName.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 20</value>
@@ -501,8 +501,8 @@
   <data name="&gt;&gt;txtRePassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="combxUserType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 153</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

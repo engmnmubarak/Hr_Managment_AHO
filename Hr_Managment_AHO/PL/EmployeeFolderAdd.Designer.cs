@@ -47,12 +47,17 @@
             // 
             // btnSelectDoc
             // 
+            this.btnSelectDoc.BackColor = System.Drawing.Color.Gray;
+            this.btnSelectDoc.FlatAppearance.BorderSize = 0;
+            this.btnSelectDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelectDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectDoc.ForeColor = System.Drawing.Color.White;
             this.btnSelectDoc.Location = new System.Drawing.Point(5, 197);
             this.btnSelectDoc.Name = "btnSelectDoc";
-            this.btnSelectDoc.Size = new System.Drawing.Size(140, 23);
+            this.btnSelectDoc.Size = new System.Drawing.Size(140, 24);
             this.btnSelectDoc.TabIndex = 1;
-            this.btnSelectDoc.Text = "اختيار الوثيقة";
-            this.btnSelectDoc.UseVisualStyleBackColor = true;
+            this.btnSelectDoc.Text = "إختيـار الـوثيقـة";
+            this.btnSelectDoc.UseVisualStyleBackColor = false;
             this.btnSelectDoc.Click += new System.EventHandler(this.btnSelectDoc_Click);
             // 
             // txtDocDesc
@@ -170,22 +175,32 @@
             // 
             // btnAddDoc
             // 
-            this.btnAddDoc.Location = new System.Drawing.Point(142, 261);
+            this.btnAddDoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.btnAddDoc.FlatAppearance.BorderSize = 0;
+            this.btnAddDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddDoc.ForeColor = System.Drawing.Color.White;
+            this.btnAddDoc.Location = new System.Drawing.Point(173, 261);
             this.btnAddDoc.Name = "btnAddDoc";
-            this.btnAddDoc.Size = new System.Drawing.Size(313, 23);
+            this.btnAddDoc.Size = new System.Drawing.Size(201, 23);
             this.btnAddDoc.TabIndex = 11;
-            this.btnAddDoc.Text = "اضافة";
-            this.btnAddDoc.UseVisualStyleBackColor = true;
+            this.btnAddDoc.Text = "إضــــافــــة";
+            this.btnAddDoc.UseVisualStyleBackColor = false;
             this.btnAddDoc.Click += new System.EventHandler(this.btnAddDoc_Click);
             // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Location = new System.Drawing.Point(12, 261);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(105, 23);
+            this.btnClose.Size = new System.Drawing.Size(91, 23);
             this.btnClose.TabIndex = 12;
-            this.btnClose.Text = "الغاء";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Text = "إلـغــاء";
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // EmployeeFolderAdd

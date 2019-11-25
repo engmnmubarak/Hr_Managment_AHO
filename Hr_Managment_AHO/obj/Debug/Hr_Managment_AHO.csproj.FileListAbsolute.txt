@@ -36,3 +36,32 @@ C:\Users\ENGMNMUBARAK\Documents\Visual Studio 2017\Projects\Hr_Managment_AHO\Hr_
 C:\Users\ENGMNMUBARAK\Documents\Visual Studio 2017\Projects\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.DepartmentEmp.resources
 C:\Users\ENGMNMUBARAK\Documents\Visual Studio 2017\Projects\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.About.resources
 C:\Users\ENGMNMUBARAK\Documents\Visual Studio 2017\Projects\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.BackupForm.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\bin\Debug\Hr_Managment_AHO.exe.config
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\bin\Debug\Hr_Managment_AHO.exe
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\bin\Debug\Hr_Managment_AHO.pdb
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\bin\Debug\ar\Hr_Managment_AHO.resources.dll
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.csprojResolveAssemblyReference.cache
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.About.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.BackupForm.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.DepartmentEmp.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.DepartmentManagment.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.EmployeeFolder.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.DepartmentAdd.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.EmployeeAdd.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.EmployeeFolderAdd.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.EmployeeManagment.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.JobAdd.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.JobManagment.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.ShowImage.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.UserLogin.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.UserManagment.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.MainForm.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.UserAdd.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.Properties.Resources.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.SplashScreen.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.DepartmentAdd.ar.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.PL.UserAdd.ar.resources
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.csproj.GenerateResource.Cache
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\ar\Hr_Managment_AHO.resources.dll
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.exe
+D:\GitHub\Hr_Managment_AHO\Hr_Managment_AHO\obj\Debug\Hr_Managment_AHO.pdb

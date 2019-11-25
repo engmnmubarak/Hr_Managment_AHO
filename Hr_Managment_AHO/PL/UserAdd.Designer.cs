@@ -45,8 +45,11 @@
             // btnCancel
             // 
             resources.ApplyResources(this.btnCancel, "btnCancel");
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtPassword
@@ -72,8 +75,11 @@
             // btnAdd
             // 
             resources.ApplyResources(this.btnAdd, "btnAdd");
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtRePassword

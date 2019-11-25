@@ -108,28 +108,33 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.comboDep);
             this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(225, 8);
+            this.groupBox2.Location = new System.Drawing.Point(205, 8);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(661, 45);
+            this.groupBox2.Size = new System.Drawing.Size(681, 45);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "فرز الموظفين حسب/";
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(12, 17);
+            this.btnRefresh.BackColor = System.Drawing.Color.Gray;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(4, 13);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRefresh.Size = new System.Drawing.Size(63, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(86, 26);
             this.btnRefresh.TabIndex = 10;
-            this.btnRefresh.Text = "الغاء الفرز";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Text = "إلغـاء الفـرز";
+            this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(211, 16);
+            this.label4.Location = new System.Drawing.Point(223, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 13);
             this.label4.TabIndex = 5;
@@ -139,7 +144,7 @@
             // 
             this.comboJobStat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboJobStat.FormattingEnabled = true;
-            this.comboJobStat.Location = new System.Drawing.Point(81, 13);
+            this.comboJobStat.Location = new System.Drawing.Point(97, 13);
             this.comboJobStat.Name = "comboJobStat";
             this.comboJobStat.Size = new System.Drawing.Size(121, 21);
             this.comboJobStat.TabIndex = 4;
@@ -148,7 +153,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(438, 16);
+            this.label3.Location = new System.Drawing.Point(441, 16);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 3;
@@ -158,7 +163,7 @@
             // 
             this.comboDir.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboDir.FormattingEnabled = true;
-            this.comboDir.Location = new System.Drawing.Point(308, 13);
+            this.comboDir.Location = new System.Drawing.Point(315, 13);
             this.comboDir.Name = "comboDir";
             this.comboDir.Size = new System.Drawing.Size(121, 21);
             this.comboDir.TabIndex = 2;
@@ -167,7 +172,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(617, 16);
+            this.label2.Location = new System.Drawing.Point(621, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 1;
@@ -177,7 +182,7 @@
             // 
             this.comboDep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboDep.FormattingEnabled = true;
-            this.comboDep.Location = new System.Drawing.Point(487, 13);
+            this.comboDep.Location = new System.Drawing.Point(493, 14);
             this.comboDep.Name = "comboDep";
             this.comboDep.Size = new System.Drawing.Size(121, 21);
             this.comboDep.TabIndex = 0;
@@ -200,57 +205,82 @@
             // 
             // btnAddEmp
             // 
+            this.btnAddEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.btnAddEmp.FlatAppearance.BorderSize = 0;
+            this.btnAddEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEmp.ForeColor = System.Drawing.Color.White;
             this.btnAddEmp.Location = new System.Drawing.Point(193, 13);
             this.btnAddEmp.Name = "btnAddEmp";
             this.btnAddEmp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnAddEmp.Size = new System.Drawing.Size(75, 23);
             this.btnAddEmp.TabIndex = 3;
-            this.btnAddEmp.Text = "اضافة ";
-            this.btnAddEmp.UseVisualStyleBackColor = true;
+            this.btnAddEmp.Text = "إضـافـة ";
+            this.btnAddEmp.UseVisualStyleBackColor = false;
             this.btnAddEmp.Click += new System.EventHandler(this.btnAddEmp_Click);
             // 
             // btnDelEmp
             // 
-            this.btnDelEmp.Location = new System.Drawing.Point(104, 13);
+            this.btnDelEmp.BackColor = System.Drawing.Color.Red;
+            this.btnDelEmp.FlatAppearance.BorderSize = 0;
+            this.btnDelEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelEmp.ForeColor = System.Drawing.Color.White;
+            this.btnDelEmp.Location = new System.Drawing.Point(13, 13);
             this.btnDelEmp.Name = "btnDelEmp";
             this.btnDelEmp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnDelEmp.Size = new System.Drawing.Size(75, 23);
             this.btnDelEmp.TabIndex = 4;
-            this.btnDelEmp.Text = "حدف ";
-            this.btnDelEmp.UseVisualStyleBackColor = true;
+            this.btnDelEmp.Text = "حــذف ";
+            this.btnDelEmp.UseVisualStyleBackColor = false;
             this.btnDelEmp.Click += new System.EventHandler(this.btnDelEmp_Click);
             // 
             // btnDoc
             // 
-            this.btnDoc.Location = new System.Drawing.Point(892, 435);
+            this.btnDoc.BackColor = System.Drawing.Color.Gray;
+            this.btnDoc.FlatAppearance.BorderSize = 0;
+            this.btnDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoc.ForeColor = System.Drawing.Color.White;
+            this.btnDoc.Location = new System.Drawing.Point(860, 435);
             this.btnDoc.Name = "btnDoc";
             this.btnDoc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnDoc.Size = new System.Drawing.Size(75, 23);
+            this.btnDoc.Size = new System.Drawing.Size(107, 26);
             this.btnDoc.TabIndex = 5;
-            this.btnDoc.Text = "عرض الوثائق";
-            this.btnDoc.UseVisualStyleBackColor = true;
+            this.btnDoc.Text = "عـرض الـوثائـق";
+            this.btnDoc.UseVisualStyleBackColor = false;
             this.btnDoc.Click += new System.EventHandler(this.btnDoc_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(12, 422);
+            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(12, 440);
             this.btnClose.Name = "btnClose";
             this.btnClose.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 8;
-            this.btnClose.Text = "اغلاق";
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Text = "إلــغــاء";
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(15, 13);
+            this.btnUpdate.BackColor = System.Drawing.Color.Gray;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(103, 13);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 6;
-            this.btnUpdate.Text = "تعديل";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Text = "تعـديـل";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // groupBox3

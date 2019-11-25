@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ملفToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تسجيلالدخولToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,9 @@
             this.إنشاءنسخةإحتياطيةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.إستعادةنسخةإحتياطيةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.خــــروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -209,12 +212,23 @@
             this.خــــروجToolStripMenuItem.Text = "خــــروج";
             this.خــــروجToolStripMenuItem.Click += new System.EventHandler(this.خــــروجToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(884, 417);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(884, 444);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -227,6 +241,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +268,6 @@
         public System.Windows.Forms.ToolStripMenuItem TsmiManagment;
         private System.Windows.Forms.ToolStripMenuItem tsmiJobManagment;
         private System.Windows.Forms.ToolStripMenuItem tsmiAddJob;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
