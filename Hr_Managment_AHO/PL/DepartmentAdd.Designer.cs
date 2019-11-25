@@ -77,9 +77,12 @@
             // 
             // btnAddImg
             // 
+            this.btnAddImg.BackColor = System.Drawing.Color.Gray;
+            this.btnAddImg.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnAddImg, "btnAddImg");
+            this.btnAddImg.ForeColor = System.Drawing.Color.White;
             this.btnAddImg.Name = "btnAddImg";
-            this.btnAddImg.UseVisualStyleBackColor = true;
+            this.btnAddImg.UseVisualStyleBackColor = false;
             this.btnAddImg.Click += new System.EventHandler(this.btnAddImg_Click);
             // 
             // pbxDepImg
@@ -185,16 +188,22 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnCancel, "btnCancel");
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnAdd, "btnAdd");
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // DepartmentAdd

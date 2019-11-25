@@ -109,62 +109,92 @@
             // 
             // btnShowImg
             // 
+            this.btnShowImg.BackColor = System.Drawing.Color.Gray;
+            this.btnShowImg.FlatAppearance.BorderSize = 0;
+            this.btnShowImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowImg.ForeColor = System.Drawing.Color.White;
             this.btnShowImg.Location = new System.Drawing.Point(247, 19);
             this.btnShowImg.Name = "btnShowImg";
             this.btnShowImg.Size = new System.Drawing.Size(111, 23);
             this.btnShowImg.TabIndex = 4;
-            this.btnShowImg.Text = "عرض الوثيقة";
-            this.btnShowImg.UseVisualStyleBackColor = true;
+            this.btnShowImg.Text = "عـرض الـوثـيـقـة";
+            this.btnShowImg.UseVisualStyleBackColor = false;
             this.btnShowImg.Click += new System.EventHandler(this.btnShowImg_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(481, 19);
+            this.btnEdit.BackColor = System.Drawing.Color.Gray;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(485, 19);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(111, 23);
+            this.btnEdit.Size = new System.Drawing.Size(100, 23);
             this.btnEdit.TabIndex = 3;
-            this.btnEdit.Text = "تعديل  ";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Text = "تـعـديـل  ";
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(6, 19);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 23);
             this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "اغلاق";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Text = "إلـغـاء";
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(364, 19);
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(371, 19);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(111, 23);
+            this.btnDelete.Size = new System.Drawing.Size(100, 23);
             this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "حدف ";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Text = "حــذف ";
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAddDoc
             // 
+            this.btnAddDoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.btnAddDoc.FlatAppearance.BorderSize = 0;
+            this.btnAddDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddDoc.ForeColor = System.Drawing.Color.White;
             this.btnAddDoc.Location = new System.Drawing.Point(598, 19);
             this.btnAddDoc.Name = "btnAddDoc";
-            this.btnAddDoc.Size = new System.Drawing.Size(111, 23);
+            this.btnAddDoc.Size = new System.Drawing.Size(100, 23);
             this.btnAddDoc.TabIndex = 0;
-            this.btnAddDoc.Text = "اضافة ";
-            this.btnAddDoc.UseVisualStyleBackColor = true;
+            this.btnAddDoc.Text = "إضــافــة ";
+            this.btnAddDoc.UseVisualStyleBackColor = false;
             this.btnAddDoc.Click += new System.EventHandler(this.btnAddDoc_Click);
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(12, 40);
+            this.btnRefresh.BackColor = System.Drawing.Color.Gray;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(20, 37);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(47, 23);
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 4;
-            this.btnRefresh.Text = "تحديث";
-            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Text = "تـحـديـث";
+            this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // pictureBoxEmp
@@ -214,7 +244,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(1, 0);
+            this.txtId.Location = new System.Drawing.Point(25, 8);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(65, 20);
