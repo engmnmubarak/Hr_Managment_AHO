@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.picShowImage = new System.Windows.Forms.PictureBox();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picShowImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // picShowImage
@@ -41,12 +45,23 @@
             this.picShowImage.TabIndex = 1;
             this.picShowImage.TabStop = false;
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(149, 507);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 2;
+            this.btnPrint.Text = "طباعة";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // ShowImage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(376, 542);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.picShowImage);
             this.MinimizeBox = false;
             this.Name = "ShowImage";
@@ -54,11 +69,14 @@
             this.Text = "مستعرض الصور";
             this.Load += new System.EventHandler(this._ٍShowImage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picShowImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         public System.Windows.Forms.PictureBox picShowImage;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
