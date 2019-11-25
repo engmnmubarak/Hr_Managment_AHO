@@ -25,6 +25,7 @@ namespace Hr_Managment_AHO.PL
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+
             PrintDocument pd = new PrintDocument();
             pd.PrintPage += PrintPage;
             pd.Print();
