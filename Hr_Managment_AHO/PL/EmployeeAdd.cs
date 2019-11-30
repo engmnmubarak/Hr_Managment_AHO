@@ -23,12 +23,12 @@ namespace Hr_Managment_AHO.PL
         private bool UpdateStatus;
 
         //PERSONAL_INFO
-        string NAME, NATIONAL_ID, ISSUING_AUTHORITY, SEX, RELATIONSHIP, PLACE_OF_BIRTH;
-        DateTime DATE_OF_BIRTH, DATE_OF_DIE;
-        Image PIRSONAL_IMAGE;
+        //string NAME, NATIONAL_ID, ISSUING_AUTHORITY, SEX, RELATIONSHIP, PLACE_OF_BIRTH;
+        //DateTime DATE_OF_BIRTH, DATE_OF_DIE;
+        //Image PIRSONAL_IMAGE;
 
         //CALL_INFO
-        string HOME_ADDRESS, PHONE, EMAIL;
+        //string HOME_ADDRESS, PHONE, EMAIL;
 
         //JOB_INFO
 

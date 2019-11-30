@@ -15,7 +15,7 @@ namespace Hr_Managment_AHO.DAL
 
         public DataAccessLayer()
         {
-            sqlconnection = new SqlConnection("Server=DESKTOP-N8H8C20;Database=AHO_DB;Integrated Security=True");
+            sqlconnection = new SqlConnection("Server=IDEAPAD310;Database=AHO_DB;Integrated Security=True");
         }
         public DataAccessLayer(bool restore)
         {
