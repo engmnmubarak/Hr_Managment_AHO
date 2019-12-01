@@ -289,6 +289,18 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\page_add.png" />
+    <None Include="Resources\picture_key.png" />
+    <None Include="Resources\picture_add.png" />
+    <None Include="Resources\page_save.png" />
+    <None Include="Resources\page_excel.png" />
+    <None Include="Resources\page_edit.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\cog.png" />
+    <None Include="Resources\cog_delete.png" />
+    <None Include="Resources\cog_edit.png" />
+    <None Include="Resources\email_add.png" />
     <Content Include="Resources\human-resources.jpg" />
     <Content Include="Resources\human-resources1.jpg" />
     <Content Include="Resources\logo_ahoh.png" />
