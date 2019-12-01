@@ -22,6 +22,18 @@ namespace Hr_Managment_AHO.PL
         BL.ClassDir classDir = new BL.ClassDir();
         private bool UpdateStatus;
 
+        //PERSONAL_INFO
+        //string NAME, NATIONAL_ID, ISSUING_AUTHORITY, SEX, RELATIONSHIP, PLACE_OF_BIRTH;
+        //DateTime DATE_OF_BIRTH, DATE_OF_DIE;
+        //Image PIRSONAL_IMAGE;
+
+        //CALL_INFO
+        //string HOME_ADDRESS, PHONE, EMAIL;
+
+        //JOB_INFO
+
+        //CUALIFICATION
+
 
         public EmployeeAdd()
         {
