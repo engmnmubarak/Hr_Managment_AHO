@@ -34,13 +34,7 @@
             this.TsmiEntry = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.TsmiManagment = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiJobManagment = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiAddJob = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiMngUsers = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsmiAddNewUser = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.إدارةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AddNewDepartment = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.خــــروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,6 +42,12 @@
             this.تسجيلالخروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddEmp = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiMngEmps = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiJobManagment = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAddJob = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiMngUsers = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsmiAddNewUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.إدارةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddNewDepartment = new System.Windows.Forms.ToolStripMenuItem();
             this.إنشاءنسخةإحتياطيةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.إستعادةنسخةإحتياطيةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -113,64 +113,10 @@
             this.TsmiManagment.Size = new System.Drawing.Size(98, 23);
             this.TsmiManagment.Text = "ادوات إداريــة";
             // 
-            // tsmiJobManagment
-            // 
-            this.tsmiJobManagment.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiAddJob});
-            this.tsmiJobManagment.Image = global::Hr_Managment_AHO.Properties.Resources.cog;
-            this.tsmiJobManagment.Name = "tsmiJobManagment";
-            this.tsmiJobManagment.Size = new System.Drawing.Size(224, 24);
-            this.tsmiJobManagment.Text = "ادارة المسميات الوظيفية";
-            this.tsmiJobManagment.Click += new System.EventHandler(this.tsmiJobManagment_Click);
-            // 
-            // tsmiAddJob
-            // 
-            this.tsmiAddJob.Image = global::Hr_Managment_AHO.Properties.Resources.add;
-            this.tsmiAddJob.Name = "tsmiAddJob";
-            this.tsmiAddJob.Size = new System.Drawing.Size(205, 24);
-            this.tsmiAddJob.Text = "اضافة مسمى وظيفي";
-            this.tsmiAddJob.Click += new System.EventHandler(this.tsmiAddJob_Click);
-            // 
-            // tsmiMngUsers
-            // 
-            this.tsmiMngUsers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TsmiAddNewUser});
-            this.tsmiMngUsers.Image = global::Hr_Managment_AHO.Properties.Resources.cog;
-            this.tsmiMngUsers.Name = "tsmiMngUsers";
-            this.tsmiMngUsers.Size = new System.Drawing.Size(224, 24);
-            this.tsmiMngUsers.Text = "إدارة المستخدمين";
-            this.tsmiMngUsers.Click += new System.EventHandler(this.tsmiMngUsers_Click_1);
-            // 
-            // TsmiAddNewUser
-            // 
-            this.TsmiAddNewUser.Image = global::Hr_Managment_AHO.Properties.Resources.add;
-            this.TsmiAddNewUser.Name = "TsmiAddNewUser";
-            this.TsmiAddNewUser.Size = new System.Drawing.Size(170, 24);
-            this.TsmiAddNewUser.Text = "إضافة مستخدم ";
-            this.TsmiAddNewUser.Click += new System.EventHandler(this.TsmiAddNewUser_Click_1);
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
-            // 
-            // إدارةToolStripMenuItem
-            // 
-            this.إدارةToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AddNewDepartment});
-            this.إدارةToolStripMenuItem.Image = global::Hr_Managment_AHO.Properties.Resources.cog;
-            this.إدارةToolStripMenuItem.Name = "إدارةToolStripMenuItem";
-            this.إدارةToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
-            this.إدارةToolStripMenuItem.Text = "إدارة المرافق";
-            this.إدارةToolStripMenuItem.Click += new System.EventHandler(this.إدارةToolStripMenuItem_Click);
-            // 
-            // AddNewDepartment
-            // 
-            this.AddNewDepartment.Image = global::Hr_Managment_AHO.Properties.Resources.add;
-            this.AddNewDepartment.Name = "AddNewDepartment";
-            this.AddNewDepartment.Size = new System.Drawing.Size(152, 24);
-            this.AddNewDepartment.Text = "إضافة مرفق";
-            this.AddNewDepartment.Click += new System.EventHandler(this.AddNewDepartment_Click_1);
             // 
             // toolStripSeparator4
             // 
@@ -199,7 +145,7 @@
             // تسجيلالدخولToolStripMenuItem
             // 
             this.تسجيلالدخولToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.تسجيلالدخولToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("تسجيلالدخولToolStripMenuItem.Image")));
+            this.تسجيلالدخولToolStripMenuItem.Image = global::Hr_Managment_AHO.Properties.Resources._531;
             this.تسجيلالدخولToolStripMenuItem.Name = "تسجيلالدخولToolStripMenuItem";
             this.تسجيلالدخولToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
             this.تسجيلالدخولToolStripMenuItem.Text = "تسجيل الدخول";
@@ -207,7 +153,7 @@
             // 
             // تسجيلالخروجToolStripMenuItem
             // 
-            this.تسجيلالخروجToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("تسجيلالخروجToolStripMenuItem.Image")));
+            this.تسجيلالخروجToolStripMenuItem.Image = global::Hr_Managment_AHO.Properties.Resources._945;
             this.تسجيلالخروجToolStripMenuItem.Name = "تسجيلالخروجToolStripMenuItem";
             this.تسجيلالخروجToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
             this.تسجيلالخروجToolStripMenuItem.Text = "تسجيل الخروج";
@@ -215,7 +161,7 @@
             // 
             // tsmiAddEmp
             // 
-            this.tsmiAddEmp.Image = ((System.Drawing.Image)(resources.GetObject("tsmiAddEmp.Image")));
+            this.tsmiAddEmp.Image = global::Hr_Managment_AHO.Properties.Resources._885;
             this.tsmiAddEmp.Name = "tsmiAddEmp";
             this.tsmiAddEmp.Size = new System.Drawing.Size(163, 24);
             this.tsmiAddEmp.Text = "إضافة موظف ";
@@ -223,15 +169,69 @@
             // 
             // tsmiMngEmps
             // 
-            this.tsmiMngEmps.Image = global::Hr_Managment_AHO.Properties.Resources.cog;
+            this.tsmiMngEmps.Image = global::Hr_Managment_AHO.Properties.Resources._481;
             this.tsmiMngEmps.Name = "tsmiMngEmps";
             this.tsmiMngEmps.Size = new System.Drawing.Size(224, 24);
             this.tsmiMngEmps.Text = "إدارة الموظفين";
             this.tsmiMngEmps.Click += new System.EventHandler(this.tsmiMngEmps_Click);
             // 
+            // tsmiJobManagment
+            // 
+            this.tsmiJobManagment.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiAddJob});
+            this.tsmiJobManagment.Image = global::Hr_Managment_AHO.Properties.Resources._484;
+            this.tsmiJobManagment.Name = "tsmiJobManagment";
+            this.tsmiJobManagment.Size = new System.Drawing.Size(224, 24);
+            this.tsmiJobManagment.Text = "ادارة المسميات الوظيفية";
+            this.tsmiJobManagment.Click += new System.EventHandler(this.tsmiJobManagment_Click);
+            // 
+            // tsmiAddJob
+            // 
+            this.tsmiAddJob.Image = global::Hr_Managment_AHO.Properties.Resources._4811;
+            this.tsmiAddJob.Name = "tsmiAddJob";
+            this.tsmiAddJob.Size = new System.Drawing.Size(205, 24);
+            this.tsmiAddJob.Text = "اضافة مسمى وظيفي";
+            this.tsmiAddJob.Click += new System.EventHandler(this.tsmiAddJob_Click);
+            // 
+            // tsmiMngUsers
+            // 
+            this.tsmiMngUsers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsmiAddNewUser});
+            this.tsmiMngUsers.Image = global::Hr_Managment_AHO.Properties.Resources._349;
+            this.tsmiMngUsers.Name = "tsmiMngUsers";
+            this.tsmiMngUsers.Size = new System.Drawing.Size(224, 24);
+            this.tsmiMngUsers.Text = "إدارة المستخدمين";
+            this.tsmiMngUsers.Click += new System.EventHandler(this.tsmiMngUsers_Click_1);
+            // 
+            // TsmiAddNewUser
+            // 
+            this.TsmiAddNewUser.Image = global::Hr_Managment_AHO.Properties.Resources._885;
+            this.TsmiAddNewUser.Name = "TsmiAddNewUser";
+            this.TsmiAddNewUser.Size = new System.Drawing.Size(170, 24);
+            this.TsmiAddNewUser.Text = "إضافة مستخدم ";
+            this.TsmiAddNewUser.Click += new System.EventHandler(this.TsmiAddNewUser_Click_1);
+            // 
+            // إدارةToolStripMenuItem
+            // 
+            this.إدارةToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddNewDepartment});
+            this.إدارةToolStripMenuItem.Image = global::Hr_Managment_AHO.Properties.Resources._361;
+            this.إدارةToolStripMenuItem.Name = "إدارةToolStripMenuItem";
+            this.إدارةToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.إدارةToolStripMenuItem.Text = "إدارة المرافق";
+            this.إدارةToolStripMenuItem.Click += new System.EventHandler(this.إدارةToolStripMenuItem_Click);
+            // 
+            // AddNewDepartment
+            // 
+            this.AddNewDepartment.Image = global::Hr_Managment_AHO.Properties.Resources._608;
+            this.AddNewDepartment.Name = "AddNewDepartment";
+            this.AddNewDepartment.Size = new System.Drawing.Size(149, 24);
+            this.AddNewDepartment.Text = "إضافة مرفق";
+            this.AddNewDepartment.Click += new System.EventHandler(this.AddNewDepartment_Click_1);
+            // 
             // إنشاءنسخةإحتياطيةToolStripMenuItem
             // 
-            this.إنشاءنسخةإحتياطيةToolStripMenuItem.Image = global::Hr_Managment_AHO.Properties.Resources.page_add;
+            this.إنشاءنسخةإحتياطيةToolStripMenuItem.Image = global::Hr_Managment_AHO.Properties.Resources._849;
             this.إنشاءنسخةإحتياطيةToolStripMenuItem.Name = "إنشاءنسخةإحتياطيةToolStripMenuItem";
             this.إنشاءنسخةإحتياطيةToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
             this.إنشاءنسخةإحتياطيةToolStripMenuItem.Text = "إنشاء نسخة إحتياطية";
@@ -239,7 +239,7 @@
             // 
             // إستعادةنسخةإحتياطيةToolStripMenuItem
             // 
-            this.إستعادةنسخةإحتياطيةToolStripMenuItem.Image = global::Hr_Managment_AHO.Properties.Resources.page_save;
+            this.إستعادةنسخةإحتياطيةToolStripMenuItem.Image = global::Hr_Managment_AHO.Properties.Resources._862;
             this.إستعادةنسخةإحتياطيةToolStripMenuItem.Name = "إستعادةنسخةإحتياطيةToolStripMenuItem";
             this.إستعادةنسخةإحتياطيةToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
             this.إستعادةنسخةإحتياطيةToolStripMenuItem.Text = "إستعادة نسخة إحتياطية";

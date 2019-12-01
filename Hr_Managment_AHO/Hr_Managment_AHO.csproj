@@ -324,6 +324,17 @@
     <None Include="Resources\cog_delete.png" />
     <None Include="Resources\cog_edit.png" />
     <None Include="Resources\email_add.png" />
+    <None Include="Resources\885.png" />
+    <None Include="Resources\849.png" />
+    <None Include="Resources\862.png" />
+    <None Include="Resources\608.png" />
+    <None Include="Resources\349.png" />
+    <None Include="Resources\361.png" />
+    <None Include="Resources\481.png" />
+    <None Include="Resources\484.png" />
+    <None Include="Resources\4811.png" />
+    <None Include="Resources\531.png" />
+    <None Include="Resources\945.png" />
     <Content Include="Resources\human-resources.jpg" />
     <Content Include="Resources\human-resources1.jpg" />
     <Content Include="Resources\logo_ahoh.png" />
