@@ -29,55 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeManagment));
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboJobStat = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboDir = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboDep = new System.Windows.Forms.ComboBox();
+            this.checkFilter = new System.Windows.Forms.CheckBox();
+            this.groupFilter = new System.Windows.Forms.GroupBox();
+            this.radioStatus = new System.Windows.Forms.RadioButton();
+            this.radioDir = new System.Windows.Forms.RadioButton();
+            this.radioDepartment = new System.Windows.Forms.RadioButton();
+            this.comboFilter = new System.Windows.Forms.ComboBox();
             this.dataGridViewEmp = new System.Windows.Forms.DataGridView();
-            this.btnAddEmp = new System.Windows.Forms.Button();
-            this.btnDelEmp = new System.Windows.Forms.Button();
-            this.btnDoc = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnDocument = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmp)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // labelSearch
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(787, 30);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(183, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "قم بادخال الكلمة المراد البحث عنها هنا:";
+            this.labelSearch.AutoSize = true;
+            this.labelSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSearch.Location = new System.Drawing.Point(888, 30);
+            this.labelSearch.Name = "labelSearch";
+            this.labelSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelSearch.Size = new System.Drawing.Size(33, 17);
+            this.labelSearch.TabIndex = 0;
+            this.labelSearch.Text = "بحث:";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(312, 29);
+            this.txtSearch.Location = new System.Drawing.Point(189, 29);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtSearch.Size = new System.Drawing.Size(469, 20);
+            this.txtSearch.Size = new System.Drawing.Size(674, 20);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.checkFilter);
+            this.groupBox1.Controls.Add(this.groupFilter);
             this.groupBox1.Controls.Add(this.dataGridViewEmp);
             this.groupBox1.Location = new System.Drawing.Point(12, 55);
             this.groupBox1.Name = "groupBox1";
@@ -87,33 +86,89 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "قائمة الموظفين:";
             // 
-            // checkBox1
+            // checkFilter
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(903, 36);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(42, 17);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "فرز";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkFilter.AutoSize = true;
+            this.checkFilter.Location = new System.Drawing.Point(775, 26);
+            this.checkFilter.Name = "checkFilter";
+            this.checkFilter.Size = new System.Drawing.Size(76, 17);
+            this.checkFilter.TabIndex = 12;
+            this.checkFilter.Text = "فرز حسب/";
+            this.checkFilter.UseVisualStyleBackColor = true;
+            this.checkFilter.CheckedChanged += new System.EventHandler(this.checkFilter_CheckedChanged);
             // 
-            // groupBox2
+            // groupFilter
             // 
-            this.groupBox2.Controls.Add(this.btnRefresh);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.comboJobStat);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.comboDir);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.comboDep);
-            this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(205, 8);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(681, 45);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "فرز الموظفين حسب/";
+            this.groupFilter.Controls.Add(this.radioStatus);
+            this.groupFilter.Controls.Add(this.radioDir);
+            this.groupFilter.Controls.Add(this.radioDepartment);
+            this.groupFilter.Controls.Add(this.comboFilter);
+            this.groupFilter.Enabled = false;
+            this.groupFilter.Location = new System.Drawing.Point(6, 9);
+            this.groupFilter.Name = "groupFilter";
+            this.groupFilter.Size = new System.Drawing.Size(763, 45);
+            this.groupFilter.TabIndex = 11;
+            this.groupFilter.TabStop = false;
+            // 
+            // radioStatus
+            // 
+            this.radioStatus.AutoSize = true;
+            this.radioStatus.Location = new System.Drawing.Point(448, 17);
+            this.radioStatus.Name = "radioStatus";
+            this.radioStatus.Size = new System.Drawing.Size(93, 17);
+            this.radioStatus.TabIndex = 8;
+            this.radioStatus.TabStop = true;
+            this.radioStatus.Text = "الوضع الوظيفي";
+            this.radioStatus.UseVisualStyleBackColor = true;
+            this.radioStatus.CheckedChanged += new System.EventHandler(this.radioStatus_CheckedChanged);
+            // 
+            // radioDir
+            // 
+            this.radioDir.AutoSize = true;
+            this.radioDir.Location = new System.Drawing.Point(571, 17);
+            this.radioDir.Name = "radioDir";
+            this.radioDir.Size = new System.Drawing.Size(64, 17);
+            this.radioDir.TabIndex = 7;
+            this.radioDir.TabStop = true;
+            this.radioDir.Text = "المديرية ";
+            this.radioDir.UseVisualStyleBackColor = true;
+            this.radioDir.CheckedChanged += new System.EventHandler(this.radioDir_CheckedChanged);
+            // 
+            // radioDepartment
+            // 
+            this.radioDepartment.AutoSize = true;
+            this.radioDepartment.Location = new System.Drawing.Point(692, 17);
+            this.radioDepartment.Name = "radioDepartment";
+            this.radioDepartment.Size = new System.Drawing.Size(58, 17);
+            this.radioDepartment.TabIndex = 6;
+            this.radioDepartment.TabStop = true;
+            this.radioDepartment.Text = "المرفق";
+            this.radioDepartment.UseVisualStyleBackColor = true;
+            this.radioDepartment.CheckedChanged += new System.EventHandler(this.radioDepartment_CheckedChanged);
+            // 
+            // comboFilter
+            // 
+            this.comboFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboFilter.FormattingEnabled = true;
+            this.comboFilter.Location = new System.Drawing.Point(6, 15);
+            this.comboFilter.Name = "comboFilter";
+            this.comboFilter.Size = new System.Drawing.Size(427, 21);
+            this.comboFilter.TabIndex = 4;
+            this.comboFilter.DropDownClosed += new System.EventHandler(this.comboFilter_DropDownClosed);
+            // 
+            // dataGridViewEmp
+            // 
+            this.dataGridViewEmp.AllowUserToAddRows = false;
+            this.dataGridViewEmp.AllowUserToDeleteRows = false;
+            this.dataGridViewEmp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmp.Location = new System.Drawing.Point(4, 60);
+            this.dataGridViewEmp.Name = "dataGridViewEmp";
+            this.dataGridViewEmp.ReadOnly = true;
+            this.dataGridViewEmp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewEmp.Size = new System.Drawing.Size(955, 295);
+            this.dataGridViewEmp.TabIndex = 0;
+            this.dataGridViewEmp.DoubleClick += new System.EventHandler(this.dataGridViewEmp_DoubleClick);
             // 
             // btnRefresh
             // 
@@ -122,134 +177,62 @@
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(4, 13);
+            this.btnRefresh.Location = new System.Drawing.Point(12, 12);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRefresh.Size = new System.Drawing.Size(86, 26);
+            this.btnRefresh.Size = new System.Drawing.Size(50, 26);
             this.btnRefresh.TabIndex = 10;
-            this.btnRefresh.Text = "إلغـاء الفـرز";
+            this.btnRefresh.Text = "تحديث";
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // label4
+            // btnAdd
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(223, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "الوضع الوظيفي:";
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(285, 13);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "إضـافـة ";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // comboJobStat
+            // btnDelete
             // 
-            this.comboJobStat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboJobStat.FormattingEnabled = true;
-            this.comboJobStat.Location = new System.Drawing.Point(97, 13);
-            this.comboJobStat.Name = "comboJobStat";
-            this.comboJobStat.Size = new System.Drawing.Size(121, 21);
-            this.comboJobStat.TabIndex = 4;
-            this.comboJobStat.DropDownClosed += new System.EventHandler(this.comboJobStat_DropDownClosed);
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(105, 13);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "حــذف ";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // label3
+            // btnDocument
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(441, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "المديرية:";
-            // 
-            // comboDir
-            // 
-            this.comboDir.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboDir.FormattingEnabled = true;
-            this.comboDir.Location = new System.Drawing.Point(315, 13);
-            this.comboDir.Name = "comboDir";
-            this.comboDir.Size = new System.Drawing.Size(121, 21);
-            this.comboDir.TabIndex = 2;
-            this.comboDir.DropDownClosed += new System.EventHandler(this.comboDir_DropDownClosed);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(621, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "المرفق:";
-            // 
-            // comboDep
-            // 
-            this.comboDep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboDep.FormattingEnabled = true;
-            this.comboDep.Location = new System.Drawing.Point(493, 14);
-            this.comboDep.Name = "comboDep";
-            this.comboDep.Size = new System.Drawing.Size(121, 21);
-            this.comboDep.TabIndex = 0;
-            this.comboDep.SelectedIndexChanged += new System.EventHandler(this.comboDep_SelectedIndexChanged);
-            this.comboDep.DropDownClosed += new System.EventHandler(this.comboDep_DropDownClosed);
-            // 
-            // dataGridViewEmp
-            // 
-            this.dataGridViewEmp.AllowUserToAddRows = false;
-            this.dataGridViewEmp.AllowUserToDeleteRows = false;
-            this.dataGridViewEmp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmp.Location = new System.Drawing.Point(4, 59);
-            this.dataGridViewEmp.Name = "dataGridViewEmp";
-            this.dataGridViewEmp.ReadOnly = true;
-            this.dataGridViewEmp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewEmp.Size = new System.Drawing.Size(955, 296);
-            this.dataGridViewEmp.TabIndex = 0;
-            this.dataGridViewEmp.DoubleClick += new System.EventHandler(this.dataGridViewEmp_DoubleClick);
-            // 
-            // btnAddEmp
-            // 
-            this.btnAddEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
-            this.btnAddEmp.FlatAppearance.BorderSize = 0;
-            this.btnAddEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddEmp.ForeColor = System.Drawing.Color.White;
-            this.btnAddEmp.Location = new System.Drawing.Point(193, 13);
-            this.btnAddEmp.Name = "btnAddEmp";
-            this.btnAddEmp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnAddEmp.Size = new System.Drawing.Size(75, 23);
-            this.btnAddEmp.TabIndex = 3;
-            this.btnAddEmp.Text = "إضـافـة ";
-            this.btnAddEmp.UseVisualStyleBackColor = false;
-            this.btnAddEmp.Click += new System.EventHandler(this.btnAddEmp_Click);
-            // 
-            // btnDelEmp
-            // 
-            this.btnDelEmp.BackColor = System.Drawing.Color.Red;
-            this.btnDelEmp.FlatAppearance.BorderSize = 0;
-            this.btnDelEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelEmp.ForeColor = System.Drawing.Color.White;
-            this.btnDelEmp.Location = new System.Drawing.Point(13, 13);
-            this.btnDelEmp.Name = "btnDelEmp";
-            this.btnDelEmp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnDelEmp.Size = new System.Drawing.Size(75, 23);
-            this.btnDelEmp.TabIndex = 4;
-            this.btnDelEmp.Text = "حــذف ";
-            this.btnDelEmp.UseVisualStyleBackColor = false;
-            this.btnDelEmp.Click += new System.EventHandler(this.btnDelEmp_Click);
-            // 
-            // btnDoc
-            // 
-            this.btnDoc.BackColor = System.Drawing.Color.Gray;
-            this.btnDoc.FlatAppearance.BorderSize = 0;
-            this.btnDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoc.ForeColor = System.Drawing.Color.White;
-            this.btnDoc.Location = new System.Drawing.Point(860, 435);
-            this.btnDoc.Name = "btnDoc";
-            this.btnDoc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnDoc.Size = new System.Drawing.Size(107, 26);
-            this.btnDoc.TabIndex = 5;
-            this.btnDoc.Text = "عـرض الـوثائـق";
-            this.btnDoc.UseVisualStyleBackColor = false;
-            this.btnDoc.Click += new System.EventHandler(this.btnDoc_Click);
+            this.btnDocument.BackColor = System.Drawing.Color.Gray;
+            this.btnDocument.FlatAppearance.BorderSize = 0;
+            this.btnDocument.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDocument.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDocument.ForeColor = System.Drawing.Color.White;
+            this.btnDocument.Location = new System.Drawing.Point(860, 435);
+            this.btnDocument.Name = "btnDocument";
+            this.btnDocument.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnDocument.Size = new System.Drawing.Size(107, 26);
+            this.btnDocument.TabIndex = 5;
+            this.btnDocument.Text = "عـرض الـوثائـق";
+            this.btnDocument.UseVisualStyleBackColor = false;
+            this.btnDocument.Click += new System.EventHandler(this.btnDocument_Click);
             // 
             // btnClose
             // 
@@ -274,7 +257,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(103, 13);
+            this.btnUpdate.Location = new System.Drawing.Point(195, 13);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
@@ -285,15 +268,32 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnAddEmp);
-            this.groupBox3.Controls.Add(this.btnDelEmp);
+            this.groupBox3.Controls.Add(this.btnPrint);
+            this.groupBox3.Controls.Add(this.btnAdd);
+            this.groupBox3.Controls.Add(this.btnDelete);
             this.groupBox3.Controls.Add(this.btnUpdate);
-            this.groupBox3.Location = new System.Drawing.Point(444, 422);
+            this.groupBox3.Location = new System.Drawing.Point(361, 422);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(285, 41);
+            this.groupBox3.Size = new System.Drawing.Size(368, 41);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "العمليات/";
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.Color.Gray;
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.ForeColor = System.Drawing.Color.White;
+            this.btnPrint.Location = new System.Drawing.Point(15, 12);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 7;
+            this.btnPrint.Text = "طباعة";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // EmployeeManagment
             // 
@@ -301,21 +301,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(988, 475);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnDoc);
+            this.Controls.Add(this.btnDocument);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelSearch);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmployeeManagment";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "ادارة الموظفين";
-            this.Load += new System.EventHandler(this.EmployeeManagment_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupFilter.ResumeLayout(false);
+            this.groupFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmp)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -325,24 +325,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridViewEmp;
-        private System.Windows.Forms.Button btnAddEmp;
-        private System.Windows.Forms.Button btnDelEmp;
-        private System.Windows.Forms.Button btnDoc;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnDocument;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboJobStat;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboDir;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboDep;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.GroupBox groupFilter;
+        private System.Windows.Forms.ComboBox comboFilter;
+        private System.Windows.Forms.CheckBox checkFilter;
+        private System.Windows.Forms.RadioButton radioStatus;
+        private System.Windows.Forms.RadioButton radioDir;
+        private System.Windows.Forms.RadioButton radioDepartment;
     }
 }

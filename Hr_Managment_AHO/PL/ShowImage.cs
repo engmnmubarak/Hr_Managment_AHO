@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
@@ -18,24 +19,16 @@ namespace Hr_Managment_AHO.PL
             InitializeComponent();
         }
 
-        private void _ٍShowImage_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnPrint_Click(object sender, EventArgs e)
         {
-
-            PrintDocument pd = new PrintDocument();
-            pd.PrintPage += PrintPage;
-            pd.Print();
+            PrintDocument printDocument1 = new PrintDocument();
+            printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+            printDocument1.Print();
         }
 
-        private void PrintPage(object o, PrintPageEventArgs e)
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            Image img = picShowImage.Image;
-            Point loc = new Point();
-            e.Graphics.DrawImage(img, loc);
+            e.Graphics.DrawImage(picShowImage.Image, 0, 0);
         }
     }
 }

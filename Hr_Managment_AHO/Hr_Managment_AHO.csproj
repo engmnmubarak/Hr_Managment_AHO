@@ -160,6 +160,18 @@
     <Compile Include="RPT\DocRPT.Designer.cs">
       <DependentUpon>DocRPT.cs</DependentUpon>
     </Compile>
+    <Compile Include="RPT\EmployeeRPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\EmployeeRPT.Designer.cs">
+      <DependentUpon>EmployeeRPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\EMPLOYEE_REPORT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMPLOYEE_REPORT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RPT\SingleDoc.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -239,6 +251,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\DocRPT.resx">
       <DependentUpon>DocRPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\EmployeeRPT.resx">
+      <DependentUpon>EmployeeRPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\EMPLOYEE_REPORT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EMPLOYEE_REPORT.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\SingleDoc.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -10,12 +10,44 @@ namespace Hr_Managment_AHO.BL
 {
     class ClassEmployee
     {
-        public DataTable GET_EMP_BY_EMPJOBSTAT(int empJobStat)
+        public DataTable SEARCH_DEP_EMPLOYEE(int id, string txt)
+        {
+            DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
+            DataTable dataTableSearch = new DataTable();
+            SqlParameter[] SearchtUserParam = new SqlParameter[2];
+            SearchtUserParam[0] = new SqlParameter("@id", SqlDbType.Int)
+            {
+                Value = id
+            };
+            SearchtUserParam[1] = new SqlParameter("@txt", SqlDbType.VarChar, 50)
+            {
+                Value = txt
+            };
+            dataTableSearch = DAL.SelectData("SEARCH_DEP_EMPLOYEE", SearchtUserParam);
+            DAL.Close();
+            return (dataTableSearch);
+
+        }
+
+        public DataTable GET_EMP_BY_JOB_TITLE(int id)
+        {
+            DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
+            SqlParameter[] jobTitParam = new SqlParameter[1];
+            jobTitParam[0] = new SqlParameter("@JobTitId", SqlDbType.Int);
+            jobTitParam[0].Value = id;
+            DAL.Open();
+            DataTable Dt = new DataTable();
+            Dt = DAL.SelectData("GET_EMP_BY_JOB_TITLE", jobTitParam);
+            DAL.Close();
+            return Dt;
+        }
+
+        public DataTable GET_EMP_BY_EMPJOBSTAT(int id)
         {
             DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
             SqlParameter[] empDepParam = new SqlParameter[1];
             empDepParam[0] = new SqlParameter("@empJobStat", SqlDbType.Int);
-            empDepParam[0].Value = empJobStat;
+            empDepParam[0].Value = id;
             DAL.Open();
             DataTable Dt = new DataTable();
             Dt = DAL.SelectData("GET_EMP_BY_EMPJOBSTAT", empDepParam);
@@ -439,7 +471,6 @@ namespace Hr_Managment_AHO.BL
             DAL.Close();
         }
     }
-
     
 }
 
