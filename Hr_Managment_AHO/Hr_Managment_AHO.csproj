@@ -335,6 +335,7 @@
     <None Include="Resources\4811.png" />
     <None Include="Resources\531.png" />
     <None Include="Resources\945.png" />
+    <None Include="Resources\352.png" />
     <Content Include="Resources\human-resources.jpg" />
     <Content Include="Resources\human-resources1.jpg" />
     <Content Include="Resources\logo_ahoh.png" />
