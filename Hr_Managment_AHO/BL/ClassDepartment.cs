@@ -117,43 +117,42 @@ namespace Hr_Managment_AHO.BL
             return Dt;
         }
 
-        public DataTable SEARCH_DEPARTMENT(string text)
+        public DataTable SEARCH_DEPARTMENT(string txt)
         {
             DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
             DataTable dataTableSearch = new DataTable();
             SqlParameter[] SearchtUserParam = new SqlParameter[1];
-            SearchtUserParam[0] = new SqlParameter("@text", SqlDbType.VarChar, 50)
+            SearchtUserParam[0] = new SqlParameter("@txt", SqlDbType.VarChar, 50)
             {
-                Value = text
+                Value = txt
             };
             dataTableSearch = DAL.SelectData("SEARCH_DEPARTMENT", SearchtUserParam);
             DAL.Close();
             return (dataTableSearch);
         }
 
-        public DataTable GET_DEP_BY_DIR(int dirId)
+        public DataTable GET_DEP_BY_DIR(int id)
         {
             DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
             DataTable dataTable = new DataTable();
             SqlParameter[] Param = new SqlParameter[1];
-            Param[0] = new SqlParameter("@dirId", SqlDbType.Int)
+            Param[0] = new SqlParameter("@id", SqlDbType.Int)
             {
-                Value = dirId
+                Value = id
             };
             dataTable = DAL.SelectData("GET_DEP_BY_DIR", Param);
             DAL.Close();
             return (dataTable);
         }
-
-        
-        public DataTable GET_DEP_BY_TYPE(int typeId)
+                
+        public DataTable GET_DEP_BY_TYPE(int id)
         {
             DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
             DataTable dataTable = new DataTable();
             SqlParameter[] Param = new SqlParameter[1];
-            Param[0] = new SqlParameter("@typeId", SqlDbType.Int)
+            Param[0] = new SqlParameter("@id", SqlDbType.Int)
             {
-                Value = typeId
+                Value = id
             };
             dataTable = DAL.SelectData("GET_DEP_BY_TYPE", Param);
             DAL.Close();
@@ -168,7 +167,6 @@ namespace Hr_Managment_AHO.BL
             DAL.Close();
             return Dt;
         }
-
-        
+                
     }
 }

@@ -38,37 +38,45 @@ namespace Hr_Managment_AHO.PL
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
+            if (checkFilter.Checked)
             {
-                groupBox3.Enabled = true;
+                groupFilter.Enabled = true;
 
             }
             else
             {
-                groupBox3.Enabled = false;
-                DataRefresh(classDepartment.GET_ALL_DEPARTMENT());
+                groupFilter.Enabled = false;
+                DataRefresh(classDepartment.GET_DEPARTMENT_TABLE());
             }
 
         }
 
         private void radioDir_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioDir.Checked)
+            if (radioDir.Checked == true)
             {
                 comboFilter.DataSource = classDir.GET_ALL_DIR();
                 comboFilter.DisplayMember = "dirName";
                 comboFilter.ValueMember = "DirId";
+            }
+            else
+            {
+
             }
         }
 
         
         private void radioType_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioType.Checked)
+            if (radioType.Checked == true)
             {
                 comboFilter.DataSource = classDepartment.GET_ALL_DEP_TYPE();
                 comboFilter.DisplayMember = "DepTypeName";
                 comboFilter.ValueMember = "DepTypeId";
+            }
+            else
+            {
+
             }
         }
 

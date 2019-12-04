@@ -28,53 +28,124 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepartmentManagment));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupFilter = new System.Windows.Forms.GroupBox();
+            this.radioType = new System.Windows.Forms.RadioButton();
+            this.comboFilter = new System.Windows.Forms.ComboBox();
+            this.radioDir = new System.Windows.Forms.RadioButton();
             this.dataGridViewDep = new System.Windows.Forms.DataGridView();
+            this.checkFilter = new System.Windows.Forms.CheckBox();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearchDep = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioType = new System.Windows.Forms.RadioButton();
-            this.comboFilter = new System.Windows.Forms.ComboBox();
-            this.radioDir = new System.Windows.Forms.RadioButton();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.groupBox1.SuspendLayout();
+            this.groupFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDep)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.groupFilter);
             this.groupBox1.Controls.Add(this.dataGridViewDep);
-            this.groupBox1.Location = new System.Drawing.Point(12, 60);
+            this.groupBox1.Controls.Add(this.checkFilter);
+            this.groupBox1.Location = new System.Drawing.Point(12, 32);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(872, 373);
+            this.groupBox1.Size = new System.Drawing.Size(872, 401);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "قائمة المرافق/";
+            // 
+            // groupFilter
+            // 
+            this.groupFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupFilter.Controls.Add(this.radioType);
+            this.groupFilter.Controls.Add(this.comboFilter);
+            this.groupFilter.Controls.Add(this.radioDir);
+            this.groupFilter.Enabled = false;
+            this.groupFilter.Location = new System.Drawing.Point(6, 9);
+            this.groupFilter.Name = "groupFilter";
+            this.groupFilter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupFilter.Size = new System.Drawing.Size(640, 38);
+            this.groupFilter.TabIndex = 8;
+            this.groupFilter.TabStop = false;
+            // 
+            // radioType
+            // 
+            this.radioType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioType.AutoSize = true;
+            this.radioType.Location = new System.Drawing.Point(441, 13);
+            this.radioType.Name = "radioType";
+            this.radioType.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioType.Size = new System.Drawing.Size(53, 17);
+            this.radioType.TabIndex = 0;
+            this.radioType.TabStop = true;
+            this.radioType.Text = "الفئة  ";
+            this.radioType.UseVisualStyleBackColor = true;
+            this.radioType.CheckedChanged += new System.EventHandler(this.radioType_CheckedChanged);
+            // 
+            // comboFilter
+            // 
+            this.comboFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboFilter.FormattingEnabled = true;
+            this.comboFilter.Location = new System.Drawing.Point(6, 11);
+            this.comboFilter.Name = "comboFilter";
+            this.comboFilter.Size = new System.Drawing.Size(398, 21);
+            this.comboFilter.TabIndex = 2;
+            this.comboFilter.DropDownClosed += new System.EventHandler(this.comboFilter_DropDownClosed);
+            // 
+            // radioDir
+            // 
+            this.radioDir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radioDir.AutoSize = true;
+            this.radioDir.Location = new System.Drawing.Point(529, 13);
+            this.radioDir.Name = "radioDir";
+            this.radioDir.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioDir.Size = new System.Drawing.Size(105, 17);
+            this.radioDir.TabIndex = 1;
+            this.radioDir.TabStop = true;
+            this.radioDir.Text = "المديرية الصحية   ";
+            this.radioDir.UseVisualStyleBackColor = true;
+            this.radioDir.CheckedChanged += new System.EventHandler(this.radioDir_CheckedChanged);
             // 
             // dataGridViewDep
             // 
             this.dataGridViewDep.AllowUserToAddRows = false;
             this.dataGridViewDep.AllowUserToDeleteRows = false;
+            this.dataGridViewDep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDep.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewDep.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDep.Location = new System.Drawing.Point(6, 19);
+            this.dataGridViewDep.Location = new System.Drawing.Point(6, 53);
             this.dataGridViewDep.Name = "dataGridViewDep";
             this.dataGridViewDep.ReadOnly = true;
             this.dataGridViewDep.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewDep.Size = new System.Drawing.Size(860, 348);
+            this.dataGridViewDep.Size = new System.Drawing.Size(860, 342);
             this.dataGridViewDep.TabIndex = 0;
             this.dataGridViewDep.DoubleClick += new System.EventHandler(this.dataGridViewDep_DoubleClick);
             // 
+            // checkFilter
+            // 
+            this.checkFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkFilter.AutoSize = true;
+            this.checkFilter.Location = new System.Drawing.Point(652, 20);
+            this.checkFilter.Name = "checkFilter";
+            this.checkFilter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkFilter.Size = new System.Drawing.Size(76, 17);
+            this.checkFilter.TabIndex = 9;
+            this.checkFilter.Text = "فرز حسب/";
+            this.checkFilter.UseVisualStyleBackColor = true;
+            this.checkFilter.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // btnInsert
             // 
+            this.btnInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
             this.btnInsert.FlatAppearance.BorderSize = 0;
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -91,6 +162,7 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.BackColor = System.Drawing.Color.Red;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -107,6 +179,7 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.BackColor = System.Drawing.Color.Gray;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -123,6 +196,7 @@
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.Red;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -142,91 +216,34 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(855, 26);
+            this.label1.Location = new System.Drawing.Point(854, 9);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "بحث";
             // 
             // txtSearchDep
             // 
-            this.txtSearchDep.Location = new System.Drawing.Point(518, 23);
+            this.txtSearchDep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchDep.Location = new System.Drawing.Point(257, 6);
             this.txtSearchDep.Name = "txtSearchDep";
-            this.txtSearchDep.Size = new System.Drawing.Size(331, 20);
+            this.txtSearchDep.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtSearchDep.Size = new System.Drawing.Size(591, 20);
             this.txtSearchDep.TabIndex = 6;
             this.txtSearchDep.TextChanged += new System.EventHandler(this.txtSearchDep_TextChanged);
             // 
-            // groupBox2
+            // printPreviewDialog1
             // 
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Location = new System.Drawing.Point(12, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox2.Size = new System.Drawing.Size(500, 51);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(416, 22);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(78, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "فرز المرافق";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radioType);
-            this.groupBox3.Controls.Add(this.comboFilter);
-            this.groupBox3.Controls.Add(this.radioDir);
-            this.groupBox3.Enabled = false;
-            this.groupBox3.Location = new System.Drawing.Point(6, 10);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox3.Size = new System.Drawing.Size(404, 35);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "فرز حسب";
-            // 
-            // radioType
-            // 
-            this.radioType.AutoSize = true;
-            this.radioType.Location = new System.Drawing.Point(204, 10);
-            this.radioType.Name = "radioType";
-            this.radioType.Size = new System.Drawing.Size(45, 17);
-            this.radioType.TabIndex = 0;
-            this.radioType.TabStop = true;
-            this.radioType.Text = "الفئة";
-            this.radioType.UseVisualStyleBackColor = true;
-            this.radioType.CheckedChanged += new System.EventHandler(this.radioType_CheckedChanged);
-            // 
-            // comboFilter
-            // 
-            this.comboFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboFilter.FormattingEnabled = true;
-            this.comboFilter.Location = new System.Drawing.Point(2, 9);
-            this.comboFilter.Name = "comboFilter";
-            this.comboFilter.Size = new System.Drawing.Size(200, 21);
-            this.comboFilter.TabIndex = 2;
-            this.comboFilter.DropDownClosed += new System.EventHandler(this.comboFilter_DropDownClosed);
-            // 
-            // radioDir
-            // 
-            this.radioDir.AutoSize = true;
-            this.radioDir.Location = new System.Drawing.Point(255, 10);
-            this.radioDir.Name = "radioDir";
-            this.radioDir.Size = new System.Drawing.Size(93, 17);
-            this.radioDir.TabIndex = 1;
-            this.radioDir.TabStop = true;
-            this.radioDir.Text = "المديرية الصحية";
-            this.radioDir.UseVisualStyleBackColor = true;
-            this.radioDir.CheckedChanged += new System.EventHandler(this.radioDir_CheckedChanged);
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // DepartmentManagment
             // 
@@ -234,7 +251,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(896, 473);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtSearchDep);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnClose);
@@ -245,11 +261,10 @@
             this.Name = "DepartmentManagment";
             this.Text = "ادارة المرافق الصحية";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupFilter.ResumeLayout(false);
+            this.groupFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDep)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,12 +279,12 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearchDep;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboFilter;
         private System.Windows.Forms.RadioButton radioDir;
         private System.Windows.Forms.RadioButton radioType;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.GroupBox groupFilter;
+        private System.Windows.Forms.CheckBox checkFilter;
         public System.Windows.Forms.DataGridView dataGridViewDep;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

@@ -38,7 +38,7 @@
             this.comboRelation = new System.Windows.Forms.ComboBox();
             this.comboSex = new System.Windows.Forms.ComboBox();
             this.dateDoB = new System.Windows.Forms.DateTimePicker();
-            this.txtNid = new System.Windows.Forms.TextBox();
+            this.txtNationalId = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.comboGradTitle = new System.Windows.Forms.ComboBox();
-            this.btnAddEmp = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -99,7 +99,7 @@
             this.groupBox1.Controls.Add(this.comboRelation);
             this.groupBox1.Controls.Add(this.comboSex);
             this.groupBox1.Controls.Add(this.dateDoB);
-            this.groupBox1.Controls.Add(this.txtNid);
+            this.groupBox1.Controls.Add(this.txtNationalId);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -120,7 +120,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(542, 138);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 13);
+            this.label8.Size = new System.Drawing.Size(87, 13);
             this.label8.TabIndex = 17;
             this.label8.Text = "الحالة الاجتماعية:";
             // 
@@ -202,14 +202,14 @@
             this.dateDoB.TabIndex = 3;
             this.dateDoB.Value = new System.DateTime(2000, 12, 31, 0, 0, 0, 0);
             // 
-            // txtNid
+            // txtNationalId
             // 
-            this.txtNid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNid.Location = new System.Drawing.Point(257, 47);
-            this.txtNid.Name = "txtNid";
-            this.txtNid.Size = new System.Drawing.Size(245, 20);
-            this.txtNid.TabIndex = 1;
-            this.txtNid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.txtNationalId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNationalId.Location = new System.Drawing.Point(257, 47);
+            this.txtNationalId.Name = "txtNationalId";
+            this.txtNationalId.Size = new System.Drawing.Size(245, 20);
+            this.txtNationalId.TabIndex = 1;
+            this.txtNationalId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNationalId_KeyPress);
             // 
             // txtName
             // 
@@ -226,7 +226,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(567, 167);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 6;
             this.label5.Text = "محل الميلاد:";
             // 
@@ -236,7 +236,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(521, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 13);
+            this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "رقم البطاقة الشخصية:";
             // 
@@ -256,7 +256,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(589, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "الجنس:";
             // 
@@ -266,7 +266,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(551, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "أسـم الموظـف :";
             // 
@@ -300,7 +300,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(561, 21);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 13);
+            this.label11.Size = new System.Drawing.Size(68, 13);
             this.label11.TabIndex = 22;
             this.label11.Text = "محل الاقامة :";
             // 
@@ -311,7 +311,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(197, 20);
             this.txtEmail.TabIndex = 9;
-            this.txtEmail.Leave += new System.EventHandler(this.textBox6_Leave);
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // lblEmail
             // 
@@ -339,7 +339,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(567, 53);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 13);
+            this.label9.Size = new System.Drawing.Size(59, 13);
             this.label9.TabIndex = 18;
             this.label9.Text = "رقم الهاتف:";
             // 
@@ -371,6 +371,7 @@
             // 
             // comboDepType
             // 
+            this.comboDepType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboDepType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboDepType.FormattingEnabled = true;
             this.comboDepType.Location = new System.Drawing.Point(329, 85);
@@ -384,7 +385,7 @@
             this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label18.Location = new System.Drawing.Point(554, 87);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(67, 13);
+            this.label18.Size = new System.Drawing.Size(71, 13);
             this.label18.TabIndex = 36;
             this.label18.Text = "فئة المرفق  : ";
             // 
@@ -404,7 +405,7 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(236, 87);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(78, 13);
+            this.label19.Size = new System.Drawing.Size(82, 13);
             this.label19.TabIndex = 25;
             this.label19.Text = "المديرية الصحية:";
             // 
@@ -414,7 +415,7 @@
             this.labelDead.AutoSize = true;
             this.labelDead.Location = new System.Drawing.Point(248, 120);
             this.labelDead.Name = "labelDead";
-            this.labelDead.Size = new System.Drawing.Size(66, 13);
+            this.labelDead.Size = new System.Drawing.Size(59, 13);
             this.labelDead.TabIndex = 34;
             this.labelDead.Text = "تاريخ الوفاة:";
             this.labelDead.Visible = false;
@@ -425,7 +426,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(562, 120);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(64, 13);
+            this.label20.Size = new System.Drawing.Size(70, 13);
             this.label20.TabIndex = 24;
             this.label20.Text = "مرفق العمل :";
             // 
@@ -494,7 +495,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(245, 21);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 13);
+            this.label17.Size = new System.Drawing.Size(67, 13);
             this.label17.TabIndex = 24;
             this.label17.Text = "تاريخ التعيين:";
             // 
@@ -513,7 +514,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(549, 21);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 13);
+            this.label14.Size = new System.Drawing.Size(80, 13);
             this.label14.TabIndex = 27;
             this.label14.Text = "الرقم الوظيفي :";
             // 
@@ -523,7 +524,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(539, 54);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(86, 13);
+            this.label13.Size = new System.Drawing.Size(96, 13);
             this.label13.TabIndex = 25;
             this.label13.Text = "المسمى الوظيفي:";
             // 
@@ -562,7 +563,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(542, 16);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 13);
+            this.label15.Size = new System.Drawing.Size(92, 13);
             this.label15.TabIndex = 29;
             this.label15.Text = "المؤهل الدراسي :";
             // 
@@ -572,7 +573,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(275, 21);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(39, 13);
+            this.label12.Size = new System.Drawing.Size(41, 13);
             this.label12.TabIndex = 24;
             this.label12.Text = "المجال:";
             // 
@@ -585,21 +586,21 @@
             this.comboGradTitle.Size = new System.Drawing.Size(197, 21);
             this.comboGradTitle.TabIndex = 6;
             // 
-            // btnAddEmp
+            // btnAdd
             // 
-            this.btnAddEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
-            this.btnAddEmp.FlatAppearance.BorderSize = 0;
-            this.btnAddEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddEmp.ForeColor = System.Drawing.Color.White;
-            this.btnAddEmp.Location = new System.Drawing.Point(458, 625);
-            this.btnAddEmp.Name = "btnAddEmp";
-            this.btnAddEmp.Size = new System.Drawing.Size(102, 26);
-            this.btnAddEmp.TabIndex = 0;
-            this.btnAddEmp.Text = "إدخــال ";
-            this.btnAddEmp.UseVisualStyleBackColor = false;
-            this.btnAddEmp.Click += new System.EventHandler(this.button3_Click);
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(458, 625);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(102, 26);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "إدخــال ";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnCancel
             // 
@@ -657,7 +658,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(235, 53);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 13);
+            this.label10.Size = new System.Drawing.Size(84, 13);
             this.label10.TabIndex = 33;
             this.label10.Text = "التخصص الدقيق:";
             // 
@@ -676,7 +677,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(580, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 31;
             this.label6.Text = "التخصص:";
             // 
@@ -699,7 +700,7 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnAddEmp);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -709,7 +710,6 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "إضـافــة مـوظــف";
-            this.Load += new System.EventHandler(this.EmployeeAdd_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSelectEmpImg)).EndInit();
@@ -757,7 +757,7 @@
         public System.Windows.Forms.ComboBox comboRelation;
         public System.Windows.Forms.ComboBox comboSex;
         public System.Windows.Forms.DateTimePicker dateDoB;
-        public System.Windows.Forms.TextBox txtNid;
+        public System.Windows.Forms.TextBox txtNationalId;
         public System.Windows.Forms.TextBox txtName;
         public System.Windows.Forms.TextBox txtAddress;
         public System.Windows.Forms.TextBox txtEmail;
@@ -776,6 +776,6 @@
         public System.Windows.Forms.ComboBox comboGradSpec;
         public System.Windows.Forms.ComboBox comboDep;
         public System.Windows.Forms.ComboBox comboDepType;
-        public System.Windows.Forms.Button btnAddEmp;
+        public System.Windows.Forms.Button btnAdd;
     }
 }
