@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepartmentAdd));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAddImg = new System.Windows.Forms.Button();
+            this.pbxDepImg = new System.Windows.Forms.PictureBox();
             this.txtDepAddress = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtDepPhone = new System.Windows.Forms.TextBox();
@@ -46,8 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnAddImg = new System.Windows.Forms.Button();
-            this.pbxDepImg = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDepImg)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,23 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnAddImg
+            // 
+            this.btnAddImg.BackColor = System.Drawing.Color.Gray;
+            this.btnAddImg.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnAddImg, "btnAddImg");
+            this.btnAddImg.ForeColor = System.Drawing.Color.White;
+            this.btnAddImg.Name = "btnAddImg";
+            this.btnAddImg.UseVisualStyleBackColor = false;
+            this.btnAddImg.Click += new System.EventHandler(this.btnAddImg_Click);
+            // 
+            // pbxDepImg
+            // 
+            this.pbxDepImg.Image = global::Hr_Managment_AHO.Properties.Resources.images;
+            resources.ApplyResources(this.pbxDepImg, "pbxDepImg");
+            this.pbxDepImg.Name = "pbxDepImg";
+            this.pbxDepImg.TabStop = false;
             // 
             // txtDepAddress
             // 
@@ -188,23 +205,6 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnAddImg
-            // 
-            this.btnAddImg.BackColor = System.Drawing.Color.Gray;
-            this.btnAddImg.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnAddImg, "btnAddImg");
-            this.btnAddImg.ForeColor = System.Drawing.Color.White;
-            this.btnAddImg.Name = "btnAddImg";
-            this.btnAddImg.UseVisualStyleBackColor = false;
-            this.btnAddImg.Click += new System.EventHandler(this.btnAddImg_Click);
-            // 
-            // pbxDepImg
-            // 
-            this.pbxDepImg.Image = global::Hr_Managment_AHO.Properties.Resources.images;
-            resources.ApplyResources(this.pbxDepImg, "pbxDepImg");
-            this.pbxDepImg.Name = "pbxDepImg";
-            this.pbxDepImg.TabStop = false;
             // 
             // DepartmentAdd
             // 

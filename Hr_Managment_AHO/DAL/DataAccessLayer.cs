@@ -13,10 +13,13 @@ namespace Hr_Managment_AHO.DAL
 
         public SqlConnection sqlconnection;
 
-     
-        public DataAccessLayer(bool restore)
+        public DataAccessLayer()
         {
             sqlconnection = new SqlConnection("Server=DESKTOP-N8H8C20;Database=AHO_DB;Integrated Security=True");
+        }
+        public DataAccessLayer(bool restore)
+        {
+            sqlconnection = new SqlConnection("Server=IDEAPAD310;Database=Master;Integrated Security=True");
         }
         //to check the database is open
         public void Open()

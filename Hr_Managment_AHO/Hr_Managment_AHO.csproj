@@ -249,6 +249,9 @@
     <EmbeddedResource Include="PL\ShowImage.resx">
       <DependentUpon>ShowImage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\UserAdd.ar.resx">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\DocRPT.resx">
       <DependentUpon>DocRPT.cs</DependentUpon>
     </EmbeddedResource>
